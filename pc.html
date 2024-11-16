@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      Millennium Computers
+      Author: Jimmy Pham
+      Date: June 10, 2023   
+      Filename:pc.html
+      
+   -->
+		
+		<meta charset="utf-8" />
+		<title>Millennium Computers</title>
+		<script src="JS/modernizr-1.5.js"></script>
+		<script src="JS/formsubmit.js"></script>
+		<link href="CSS/mill.css" rel="stylesheet">
+		<link href="CSS/oform.css" rel="stylesheet2">
+		
+   </head>
+   
+ 
+   
+   <body>
+	   <header>
+		   <img src="Images/mc_logo.png" />
+	   </header>
+
+	   <nav class="topbar">
+		   <ul>
+			   <li><a href="javascript:">Home</a></li>
+			   <li><a href="javascript:">Desktops</a></li>
+			   <li><a href="javascript:">Laptops</a></li>
+			   <li><a href="javascript:">Peripherals</a></li>
+			   <li><a href="javascript:">Support</a></li>
+			   <li style="float:right"><a class="active" href="javascript:">Your Account</a></li>
+			   <li style="float:right"><a class="active" href="javascript:">Shopping Cart</a></li>
+			   <li style="float:right"><a class="active" href="javascript:">Contact Us</a></li>
+		   </ul>
+	   </nav>
+
+
+	   <section id="build">
+		   <article>
+			   <h1>
+				   Build Your Computer
+			   </h1>
+			   <p>
+				   * - required information
+			   </p>
+		   </article>
+
+	   </section>
+	   <form id="cOrder" action="http://www.mill_computers.com/order/process.cgi" method="post" onsubmit="return setForm()">
+		   <fieldset id="custInfo">
+			   <legend>Contact Information</legend>
+			   <label>First Name *</label><input type="text" id="fName" name="fName" required>
+		       <label>Last Name *</label>
+			   <input type="text" id="lName" name="lName" required>
+			   <label>Street *</label><input type="text" id="street" name="street" required>
+			   <label>City *</label>
+			   <input type="text" id="city" name="city" required>
+			   <label>Province *</label>
+			   <input type="text" id="province" name="province" required>
+			   <label>Postal Code *</label>
+			   <input type="text" id="poscode" name="poscode" placeholder="V5V5V5" required pattern=[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]>
+			   <label>Phone *</label>
+			   <input type="text" id="phone" name="phone" placeholder="123-456-7890"required pattern=\d{3}[\-]\d{3}[\-]\d{4}>
+		   </fieldset>
+
+		   <fieldset id="config">
+			   <legend>Computer Configuration</legend>
+			   <label>Processor Speed</label>
+			   <select name="Processor Speeds" id="pSpeed">
+				   <option value="2.4">2.4 GHz</option>
+				   <option value="3.2">3.2 GHz</option>
+				   <option value="4">4 GHz</option>
+				   <option value="5.2">5.2 GHz</option>
+			   </select><br>
+
+			   <label>Memory</label>
+			   <select name="Memory" id="mem">
+				   <option value="1">1 GB</option>
+				   <option value="2">2 GB</option>
+				   <option value="4">4 GB</option>
+				   <option value="8">8 GB</option>
+			   </select><br>
+
+			   <label>Monitor Size</label>
+			   <select name="Monitor Sizes" id="monitor">
+				   <option value="15">15"</option>
+				   <option value="17">17"</option>
+				   <option value="19">19"</option>
+				   <option value="21">21"</option>
+			   </select><br>
+
+			   <label>Hard Drive</label>
+			   <select name="Hard Drive" id="hd">
+				   <option value="240">240 GB</option>
+				   <option value="500">500 GB</option>
+				   <option value="750">750 GB</option>
+				   <option value="1000">1 TB</option>
+			   </select><br>
+
+			   <label>DVD Burner</label>
+			   <input type="radio" id="yes" name="dvd" value="Yes">
+			   Yes
+			   <input type="radio" id="no" name="dvd" value="No">
+			   No<br />
+
+			   <label>Lan Card</label>
+			   <input type="radio" id="yes" name="tuner" value="Yes">
+			   Yes
+			   <input type="radio" id="no" name="tuner" value="No">
+			  No<br />
+
+			   <label>Media Card Reader</label>
+			   <input type="radio" id="yes" name="mCard" value="Yes">
+			   Yes
+			   <input type="radio" id="no" name="mCard" value="No">
+			   No<br />
+		   </fieldset>
+
+		   <section id="warranty">
+			   <label><input type="checkbox" />Yes, I want the 24-month extended warranty</label>
+		   </section>
+
+		   <section id="requests">
+			   <p>Any special requests on your order?</p>
+			   <textarea id="requests" name="requests" placeholder="" maxlength="500"></textarea>
+		   </section>
+
+		   <input type="submit" value="Send Order">
+		   <input type="reset" value="Cancel Order">
+		   <input type="Button" value="Contact Me">
+
+	   </form>
+
+	   <footer>
+		   <p>
+			   Millennium Computer ●
+			   100 Commerce Drive ●
+			   Madison, WI 53597 ●
+			   (608) 555 - 8441
+		   </p>
+	   </footer>
+
+   </body>
+   
+
+</html>

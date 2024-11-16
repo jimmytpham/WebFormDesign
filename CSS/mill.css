@@ -1,0 +1,54 @@
+/*
+
+   Millennium Computers Style Sheet
+   Author: Jimmy Pham
+   Date:   June 15, 2023
+
+   Filename: mill.css
+*/
+@import "oform.css";
+
+
+header, nav, section, aside, footer{
+	display:block;
+}
+	
+header {
+	width: 80%;
+	height: 10%;
+}
+ul{
+	list-style-type: none;
+	margin: 1em;
+	padding: 0;
+	overflow: hidden;
+	background-color:#f3f3f3;
+	border: 1px solid #e7e7e7;
+}
+li{
+	float:left;
+	border-right: 1px solid #bbb;
+	border-left: 1px solid #bbb;
+}
+li a{
+	display: block;
+	text-align: center;
+	padding: 14px 18px;
+	text-decoration:none;
+	color: #666;
+}
+
+h1{
+	font-size:2em;
+}
+p{
+	font-size:1em;
+}
+
+
+footer{
+	clear: left;
+    border-top: 1px solid black;
+    text-align: center;
+	margin-top:1em;
+}
